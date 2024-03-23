@@ -1,0 +1,82 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Empty Dictionary results_dic - n items= 0
+
+Printing all key-value pairs in dictionary results_dic:
+Filename= Dog_01.jpg    Pet Label= dog
+Filename= Dog_02.jpg    Pet Label= dog
+Filename= Wolf_01.jpg    Pet Label= wolf
+Filename= Boot_01.jpg    Pet Label= boot
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                    Wolf_01.jpg  label:                       wolf
+ 4 key:                    Boot_01.jpg  label:                       boot
+
+     MATCH:
+
+                   Wolf_01.jpg: 
+Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, Canis lupus
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                     Rottweiler
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                     Rottweiler
+
+                   Boot_01.jpg: 
+Real:                       boot   Classifier:                       knee pad
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                   Wolf_01.jpg: 
+Real:                       wolf   Classifier: timber wolf, grey wolf, gray wolf, Canis lupus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                     Rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                     Rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                   Boot_01.jpg: 
+Real:                       boot   Classifier:                       knee pad  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+                    Model :  vgg
+             No. of images:  4
+         No. of Dog Images:  2
+  No. of "Not-a"Dog Images:  2
+            % Correct Dogs:  100.0
+            %Correct Breed:  0.0
+     % Correct "Not-a" Dog:  100.0
+                   % Match:  25.0
+*************************************
+********MISCLASSIFIED BREEDS*********
+*************************************
+Pet Image Label:  dog 	Classifier Label:  Rottweiler
+Pet Image Label:  dog 	Classifier Label:  Rottweiler
+
+** Total Elapsed Runtime: 0:0:8

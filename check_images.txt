@@ -1,0 +1,26 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer:
+
+Both VGG and Alexnet showed consistency in their classification by guessing a Rottweiler, even when the image was flipped horizontally. This was a good guess, as the dog in the picture is part Rottweiler, although mostly Australian Shepard. The reason for this could be that the picture only shows the dog's face, and the Rottweiler traits are more prominent there. Hence, I would consider it a win for both VGG and Alexnet models. 
+
+However, the Resnet model not only mislabeled the image, but also failed to show consistency when the image was flipped horizontally. Despite the wrong label, I believe that both VGG and Alexnet made excellent guesses since both classifications bear similar traits to the dog in the photo.
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Refer to previous answer.
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: 
+
+All three models correctly identified the wolf and the boot as non-dogs. They all accurately classified the wolf. However, only Resnet correctly identified the boot. Vgg misclassified it as a kneepad, and Alexnet identified it as a cuirass. I can understand why Alexnet may have been confused by the decorative chain and classified it as a part of the armor, but I'm not sure why VGG identified it as a kneepad.    
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer:
+
+For this particular set of images, I would opt to use Resnet. Unlike the other models, Resnet could correctly identify the boot in the image. Although it provided two different answers for the flipped dog images, the predictions were still excellent and acceptable. It seems that Resnet performs better on a wider variety of objects. While it may not be the best at identifying dog breeds, it is still an acceptable performance. I plan to repeat this experiment with a less ambiguous dog breed to see if it affects the results.
